@@ -1,0 +1,4 @@
+.imagen {
+  width: 200px; /* Ancho deseado */
+  height: auto; /* Mantener la proporción de aspecto */
+}
