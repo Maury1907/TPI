@@ -5,21 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laberinto de Letras</title>
-  <link rel="stylesheet" href="../miweb/Estilo/styles.css">
+  <link rel="stylesheet" href="./Estilo/styles.css">
 </head>
 
 <body>
   <header class="header">
-    <h1>Laberinto de Letras</h1>
-    <!--seccion de menu de navegacion-->
+        <!--seccion de menu de navegacion-->
     <!--Esta seccion esta contenida en el "header", se podria agregar una barra de busqueda-->
     <nav class="navegacion">
-      <ul>
-        <li><a href="../miweb/templates/inicio.html">Inicio</a></li>
-        <li><a href="/templates/libros.html">Libros</a></li>
-        <li><a href="/templates/servicios.html">Servicios</a></li>
-        <li><a href="/templates/contactos.html">Contactos</a></li>
-        <li><a href="/templates/login.html">Login</a></li>
+      <h1>Laberinto de Letras</h1>
+      <ul class="header-nav">
+        <li><a href="./templates/inicio.html">Inicio</a></li>
+        <li><a href="./templates/libros.html">Libros</a></li>
+        <li><a href="./templates/servicios.html">Servicios</a></li>
+        <li><a href="./templates/contactos.html">Contactos</a></li>
+        <li><a href="./templates/login.html">Login</a></li>
       </ul>
     </nav>
   </header>
@@ -36,25 +36,25 @@
     <section class="top-generos">
       <h2>Géneros más buscados</h2>
       <div class="carrusel-generos">
-        <!-- A las imagenes les pongo un tamaño random solo para achicarlas y que no sea tan largo mirar la página, por lo menos hasta que hagamos un css -->
-        <ul>
+                <ul>
           <li><a href="cienciaficcion"><img src="./Imagenes/ciencia ficcion.jpeg" class="imagen"
                 alt="Libros de ciencia ficcion" height="240px" width="240px"></a></li>
-          <li><a href="fantasia"><img src="./Imagenes/fantasia.jpg" class="imagen" alt="Libros de fantasia" height="240px" width="240px"></a></li>
-          <li><a href="misterio"><img src="./Imagenes/misterio.jpg" class="imagen" alt="Libros de misterio" height="240px" width="240px"></a></li>
-          <li><a href="terror"><img src="./Imagenes/terror.webp" class="imagen" alt="Libros de terror" height="240px" width="240px"></a></li>
-          <li><a href="romance"><img src="./Imagenes/romance.jpg" class="imagen" alt="Libros de drama y romance" height="240px" width="240px"></a>
-          </li>
-          <li><a href="aventura"><img src="./Imagenes/aventura.jpg" class="imagen" alt="Libros de aventura" height="240px" width="240px"></a></li>
-          <li><a href="historico"><img src="./Imagenes/historico.webp" class="imagen" alt="Libros historicos" height="240px" width="240px"></a></li>
-          <li><a href="realismo"><img src="./Imagenes/realismo.jpg" class="imagen" alt="Libros de realismo" height="240px" width="240px"></a></li>
+                <li><a href="misterio"><img src="./Imagenes/misterio.jpg" class="imagen" alt="Libros de misterio" ></a></li>
+                <li><a href="terror"><img src="./Imagenes/terror.webp" class="imagen" alt="Libros de terror" ></a></li>
+                <li><a href="romance"><img src="./Imagenes/romance.jpg" class="imagen" alt="Libros de drama y romance" ></a>
+                </li>
+                <li><a href="aventura"><img src="./Imagenes/aventura.jpg" class="imagen" alt="Libros de aventura" ></a></li>
+                <li><a href="historico"><img src="./Imagenes/historico.webp" class="imagen" alt="Libros historicos" ></a></li>
+                <li><a href="realismo"><img src="./Imagenes/realismo.jpg" class="imagen" alt="Libros de realismo" ></a></li>
+                <li><a href="fantasia"><img src="./Imagenes/fantasia.jpg" class="imagen" alt="Libros de fantasia" ></a></li>
           <li><a href="naturalismo"><img src="./Imagenes/naturalismo.jpg" class="imagen"
-                alt="Libros de naturalismo" height="240px" width="240px"></a></li>
-          <li><a href="gotico"><img src="./Imagenes/gotico.jpg" class="imagen" alt="Libros goticos" height="240px" width="240px"></a></li>
+                alt="Libros de naturalismo"></a></li>
+          <li><a href="gotico"><img src="./Imagenes/gotico.jpg" class="imagen" alt="Libros goticos"></a></li>
         </ul>
       </div>
     </section>
     <section class="top-libros">
+      <h2>Libros mas vendidos</h2>
       <div class="libros" name="en-agosto-nos-vemos">
         <div class="portada-libro"><img src="Imagenes/Portadas/en-agosto-nos-vemos.jpg" alt="En agosto Nos Vemos" width="168" height="240"></div>
         <h3 class="nombre-libro"><a href="#">En Agosto Nos Vemos</a></h3>
