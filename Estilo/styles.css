@@ -36,6 +36,42 @@ nav{
   gap: 40px;
 }
 
+.contenedor-top-libros{
+  border: 5px;
+  border-style: solid;
+  width: 95%;
+  height: 1200px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+   }
+
+   .title-top-libros{
+    display: block;
+    grid-column: 1/5;
+    background-color: aqua;
+   }
+  
+  .libros{
+    width: 200px;
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+  }
+  
+  .titulo-libro{
+    font-size: 20px;
+  }
+
+  .portada-libro{
+    text-align: center;
+  }
+
 footer{
   background-color: rgba(93, 102, 11, 0.678);
 
