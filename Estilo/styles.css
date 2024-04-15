@@ -20,6 +20,16 @@ nav{
   align-items: center;
 }
 
+.logo{
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+}
+
 .header-nav{
   list-style: none;
   display: flex;  
@@ -51,10 +61,10 @@ nav{
   justify-items: center;
    }
 
-   .title-top-libros{
-    display: block;
+   .title-top-libros{   
+    text-align: center;    
     grid-column: 1/5;
-    background-color: aqua;
+    background-color: rgba(255, 251, 0, 0.678);
    }
   
   .libros{
