@@ -5,7 +5,7 @@
 }
 
 header{
-  background-color: rgba(93, 102, 11, 0.678);
+  background-color: rgb(93, 102, 11);
   color: white;
   position:sticky;
   top:0;
@@ -34,9 +34,18 @@ nav{
   list-style: none;
   display: flex;  
   gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.imagen {
+.header-nav a{
+  text-decoration: none;
+  color:#FFF;
+  padding: 10px 20px;
+  cursor: pointer; 
+  }
+
+  .imagen {
   width: 200px; /* Ancho deseado */
   height: 200px; 
 }
@@ -51,8 +60,7 @@ nav{
   border-style: solid;
   width: 95%;
   height: 1200px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  margin: 25px 2.5% 25px 2.5%;  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -80,9 +88,28 @@ nav{
 
   .portada-libro{
     text-align: center;
+    margin: 10px;    
+  }
+
+  .portada-libro img{
+    width: 168px;
+    height: 240px;
   }
 
 footer{
-  background-color: rgba(93, 102, 11, 0.678);
-
+  background-color: rgb(93, 102, 11);
+  text-align: center; 
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
 }
+
+
+.footer a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+
+
+
