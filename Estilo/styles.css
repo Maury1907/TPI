@@ -40,10 +40,15 @@ nav{
 
 .header-nav a{
   text-decoration: none;
+  display: block;
   color:#FFF;
   padding: 10px 20px;
   cursor: pointer; 
   }
+
+.header-nav a:hover{
+  background:rgb(77, 85, 9)
+}
 
   .imagen {
   width: 200px; /* Ancho deseado */
