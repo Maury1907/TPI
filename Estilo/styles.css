@@ -146,6 +146,22 @@ nav {
   font-weight: 400;
 }
 
+.title-lista-generos{
+  text-align: center;
+}
+
+.lista-generos{
+  width: 95%;
+  margin: 10px 2.5%;
+}
+
+.lista{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  overflow: scroll;
+}
+
 footer {
   background-color: rgb(93, 102, 11);
   text-align: center;
