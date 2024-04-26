@@ -104,7 +104,7 @@ nav {
   border: 2px;
   border-style: solid;
   width: 95%;
-  height: 1200px;
+  min-height: 1200px;
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: grid;
@@ -113,6 +113,7 @@ nav {
   justify-content: space-around;
   align-content: center;
   justify-items: center;
+  overflow: hidden;
 }
 
 .title-top-libros {
@@ -186,4 +187,38 @@ footer {
 .footer a {
   text-decoration: none;
   color: #FFF;
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+.generos-mas-buscados{
+  justify-content: space-between;
+  overflow: scroll;
+}
+
+  .contenedor-top-libros{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+
+}
+
+/* Celulares */
+@media screen and (max-width: 767px) {
+  .logo img{
+    display: none
+  }
+
+  nav{
+    height: auto;
+  }
+
+    .generos-mas-buscados{
+    overflow: scroll;
+    justify-content: space-between;
+  }
+
+  .contenedor-top-libros{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
