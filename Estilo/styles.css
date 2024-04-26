@@ -53,7 +53,7 @@ nav {
   background: rgb(77, 85, 9)
 }
 
-.titulo-top-generos{
+.titulo-top-generos {
   text-align: center;
 }
 
@@ -118,13 +118,13 @@ nav {
   border-color: gray;
 }
 
-.libros:hover{
+.libros:hover {
   border: 2px solid #000
 }
 
 .titulo-libro {
   font-size: 20px;
-  font-weight: 700;  
+  font-weight: 700;
 }
 
 .titulo-libro a {
@@ -147,19 +147,19 @@ nav {
   font-weight: 400;
 }
 
-.title-lista-generos{
+.title-lista-generos {
   text-align: center;
 }
 
-.lista-generos{
+.lista-generos {
   width: 95%;
   margin: 10px 2.5%;
 }
 
-.lista{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+.lista {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   overflow: scroll;
 }
 
@@ -168,7 +168,7 @@ footer {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 20px 0 ;
+  padding: 20px 0;
 }
 
 
@@ -177,3 +177,21 @@ footer {
   color: #FFF;
 }
 
+/* Específico página libro */
+
+.superior {
+  margin: 25px 2.5%;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.portada-grande {
+  text-align: center;
+  margin: 5px;
+}
+
+.detalles-libro-grande {
+  width: 80%;
+  margin: 5px 20px;
+}
