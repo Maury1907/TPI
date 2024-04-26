@@ -73,6 +73,7 @@ nav {
 
 .genero:hover {
   font-weight: bold;
+  scale: 1.05;
 }
 
 .imagen-gen {
@@ -175,3 +176,4 @@ footer {
   text-decoration: none;
   color: #FFF;
 }
+
