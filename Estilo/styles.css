@@ -222,3 +222,60 @@ footer {
     grid-template-columns: repeat(1,1fr);
   }
 }
+
+.main-login {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.form-login{
+  width: 40vh;
+}
+
+.login-container {
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.h2-login {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.input-login {
+  margin-bottom: 20px;
+}
+
+/*.input-login label {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+}*/
+
+.input-login input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(149, 163, 17);
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(93, 102, 11);
+}

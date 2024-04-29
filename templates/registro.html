@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilo/styles.css">
+    <link rel="shortcut icon" href="../Imagenes/favicon.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--seccion de menu de navegacion-->
+        <!--Esta seccion esta contenida en el "header", se podria agregar una barra de busqueda-->
+        <nav class="navegacion">
+            <div class="logo"> <img src="../Imagenes/Icono.png" alt="logo-laberinto">
+                <h1>Laberinto de Letras</h1>
+            </div>
+            <ul class="header-nav">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="../templates/libros.html">Libros</a></li>
+                <li><a href="../templates/servicios.html">Servicios</a></li>
+                <li><a href="../templates/contactos.html">Contactos</a></li>
+                <li><a href="../templates/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-login">
+        <div class="login-container">
+            <h2 class="h2-login">Registro</h2>
+            <form action="#" class="form-login">
+                <div class="input-login" class="input-email">
+                    <!-- <label for="email">Email</label> -->
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-login">
+                    <!-- <label for="username">Usuario</label> -->
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                </div>
+                <div class="input-login">
+                    <!-- <label for="password">Contraseña</label> -->
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="input-login">
+                    <!-- <label for="password">Repetir contraseña</label> -->
+                    <input type="password" id="password" name="password" placeholder="Repetir contraseña" required>
+                </div>
+                <button class="login-button" type="submit">Registrarse</button>
+            </form>
+            <br>
+            <a href="login.html">Ya tienes cuenta? Inicia Sesión</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="redes sociales">
+            <h3>Seguí a Laberinto de Letras </h3>
+            <ul class="links-redes">
+                <li><a href="facebook">Facebook</a> </li>
+                <li> <a href="instagram">Instagram</a></li>
+                <li><a href="x">X</a> </li>
+                <li><a href="youtube">Youtube</a></li>
+            </ul>
+
+        </div>
+        <div class="info-empresa">
+            <h3>Más información de la pagina</h3>
+            <ul><a href="empleo.html">Empleos</a></ul>
+            <ul><a href="acerca-de-nosotros.html">Acerca de nosotros</a></ul>
+            <ul><a href="asistencia.html">Asistencia</a></ul>
+            <ul><a href="contacto.html">Contacto</a></ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
