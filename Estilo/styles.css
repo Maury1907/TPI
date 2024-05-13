@@ -175,58 +175,265 @@ nav {
   justify-content: space-between;
   gap: 20px;
   overflow: scroll; */
-.lista{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+
+
+.lista {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   overflow-x: scroll;
 }
 
-footer {
-  margin-top: auto;
-  background-color: rgb(93, 102, 11);
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 20px 0;
+
+/* Contactos */
+
+.pagina-contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section{
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.pagina-contacto{
+  background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(../Imagenes/libros.jpg) center;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-pagina-contacto{
+  color: #fff;
+font-size: 40px;
 }
 
 
-.footer a {
+.wrap-two-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+}
+.column-half-1 p{
+  margin: 20px;
+}
+.column-half p{
+  margin: 20px;
+}
+
+.formulario-contacto{
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+}
+
+.formulario-contacto input, .formulario-contacto{
+margin: .5rem 0;
+padding: .5rem .2;
+}
+
+.formulario-contacto button{
+ 
+  border: none;
+  padding: .5rem 1rem;
+  background-color: #f4e89c;
+  color: black;
+  font-size: 1.1rem;
+  
+}
+
+.mapa-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media(max-width: 640px){
+  .wrap-two-column{
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+  }
+}
+@media(max-width: 900px){
+ .formulario-contacto{
+  width: 100%;
+ }
+}
+
+
+
+
+
+
+
+
+/* Footer */
+.pie-pagina {
+  background-color: rgb(93, 102, 11);
+  width: 100%;
+  margin: 0;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 200px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin: 10px 20px 10px 20px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box a {
+  color: #FFF;
   text-decoration: none;
+  margin-top: 15px;
+}
+
+.pie-pagina .grupo-1 .box ul {
+  margin: 10px;
+
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 15px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: rgb(93, 102, 11);
+  text-align: center;
+  font-size: 40px;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: black;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: rgb(93, 102, 11);
+  padding: 15px 10px;
+  text-align: center;
   color: #FFF;
 }
 
-/* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-.generos-mas-buscados{
-  justify-content: space-between;
-  overflow: scroll;
+.pie-pagina .grupo-2 p {
+  font-size: 13px;
 }
 
-  .contenedor-top-libros{
-    grid-template-columns: repeat(2,1fr);
+@media screen and (max-width:800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+/* .instagram {
+  font-size: 40px;
+  color: black;
+}
+
+.instagram:hover {
+  color: red;
+}
+
+.facebook {
+  font-size: 40px;
+  color: black;
+}
+
+.facebook:hover {
+  color: rgb(0, 55, 255);
+}
+
+.twitter {
+  font-size: 40px;
+  color: black;
+}
+
+.twitter:hover {
+  color: rgb(240, 241, 243);
+}
+
+.youtube {
+  font-size: 40px;
+  color: black;
+}
+
+.youtube:hover {
+  color: red
+} */
+
+
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .generos-mas-buscados {
+    justify-content: space-between;
+    overflow: scroll;
+  }
+
+  .contenedor-top-libros {
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
+
+
+
+
+
 
 /* Celulares */
 @media screen and (max-width: 767px) {
-  .logo img{
+  .logo img {
     display: none
   }
 
-  nav{
+  nav {
     height: auto;
   }
 
-    .generos-mas-buscados{
+  .generos-mas-buscados {
     overflow: scroll;
     justify-content: space-between;
   }
 
-  .contenedor-top-libros{
-    grid-template-columns: repeat(1,1fr);
+  .contenedor-top-libros {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -272,7 +479,7 @@ footer {
 
 .boton-compra {
   width: 10em;
-  height: 5em;  
+  height: 5em;
   align-self: flex-end;
   border: 1px solid #000;
   font-size: 20px;
@@ -282,29 +489,29 @@ footer {
   color: #FFF;
   box-shadow: inset -5em 0 0 0 rgb(112, 122, 19), inset 5em 0 0 0 rgb(112, 122, 19);
   transition: 1s ease-in;
-  }
+}
 
-.inferior{
+.inferior {
   width: 95%;
   margin: 0 2.5% 25px 2.5%;
 }
 
-.ficha-tecnica{
+.ficha-tecnica {
   position: relative;
   left: 10em
 }
 
-table{
+table {
   border-spacing: 0;
-  }
+}
 
-th{
+th {
   border-bottom: 1px solid #000;
   border-right: 1px solid #000;
   padding: 5px;
 }
 
-td{
+td {
   border-bottom: 1px solid #000;
   padding: 5px;
 }
