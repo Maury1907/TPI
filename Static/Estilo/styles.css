@@ -64,7 +64,7 @@ nav {
   background: none
 }
 
-.titulo-top-generos {
+.titulo-mas-vendidos {
   text-align: center;
 }
 
@@ -78,7 +78,7 @@ nav {
   margin-bottom: 2.5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content:flex-start; /* Alinear items flex desde el comienzo */
+  justify-content:space-between; /* Alinear items flex desde el comienzo */
   align-items: start; /* Agrupa los elementos desde el inicio */
   text-align: center; /* Alinea el texto al centro */
   overflow: hidden;
