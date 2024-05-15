@@ -34,11 +34,13 @@
           <!-- <label for="username">Nombre de usuario</label> -->
           <input type="text" id="username" name="username" placeholder="Usuario" required>
         </div>
+        <div class="error" id="error-username"></div>
         <div class="input-login">
           <!-- <label for="password">Contraseña</label> -->
           <input type="password" id="password" name="password" placeholder="Contraseña" required>
         </div>
-        <button class="login-button" type="submit">Iniciar sesión</button>
+        <div class="error" id="error-password"></div>
+        <button class="login-button" type="button">Iniciar sesión</button>
       </form>
       <br>
       <a href="registro.html">No tienes cuenta? Registrate</a>
@@ -66,5 +68,5 @@
 
 </body>
 
-
+<script src="../Static/js/Login.js"></script>
 </html>
