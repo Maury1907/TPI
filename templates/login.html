@@ -18,11 +18,10 @@
         <h1>Laberinto de Letras</h1>
       </div>
       <ul class="header-nav">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./libros.html">Libros</a></li>
-        <li><a href="./servicios.html">Servicios</a></li>
-        <li><a href="./contactos.html">Contactos</a></li>
-        <li><a href="./login.html">Login</a></li>
+        <li><a href="../index.html" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img src="/Static/Imagenes/Icons/Home.png" alt="Home" class="icono">Inicio</a></li>
+        <li><a href="./libros.html" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img src="/Static/Imagenes/Icons/Book.png" alt="Book" class="icono">Libros</a></li>
+        <li><a href="./contactos.html" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img src="/Static/Imagenes/Icons/Contact.png" alt="Contact" class="icono">Contactos</a></li>
+        <li><a href="./login.html" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img src="/Static/Imagenes/Icons/Login.png" alt="Login" class="icono">Login</a></li>
       </ul>
     </nav>
   </header>
@@ -34,12 +33,12 @@
           <!-- <label for="username">Nombre de usuario</label> -->
           <input type="text" id="username" name="username" placeholder="Usuario" required>
         </div>
-        <div class="error" id="error-username"></div>
+        <span class="error" id="error-username"></span>
         <div class="input-login">
           <!-- <label for="password">Contraseña</label> -->
           <input type="password" id="password" name="password" placeholder="Contraseña" required>
         </div>
-        <div class="error" id="error-password"></div>
+        <span class="error" id="error-password"></span>
         <button class="login-button" type="button">Iniciar sesión</button>
       </form>
       <br>
@@ -69,4 +68,5 @@
 </body>
 
 <script src="../Static/js/Login.js"></script>
+<script src="../Static/js/Animaciones.js"></script>
 </html>
