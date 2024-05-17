@@ -11,7 +11,7 @@
 }
 
 header {
-  background: linear-gradient(rgb(77, 85 , 9), #f4e89c);
+  background: linear-gradient(rgb(77, 85, 9), #f4e89c);
   color: white;
   position: sticky;
   top: 0;
@@ -29,11 +29,31 @@ body {
   /* Asegura que el contenido cubra al menos la altura completa de la ventana */
 }
 
+/*Nav*/
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+}
+
+nav ul li a{
+  display: flex;
+  align-items: center;
+}
+
+nav ul{
+  list-style: none;
+}
+
+.icono{
+  width: 40px; /* Tamaño de la imagen */
+  height: auto; /* Autoajuste de la altura */
+  display: block; /* Para que se respete el tamaño especificado */
+  margin: 0 auto 5px;
+  position: relative;
+  top: 1px;
+  right: 3px;
 }
 
 .logo {
@@ -63,6 +83,22 @@ nav {
 .header-nav a:hover {
   background: none
 }
+/*animacion nav*/
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.animacion-salto {
+  animation: bounce 0.8s infinite;
+}
 
 .titulo-mas-vendidos {
   text-align: center;
@@ -78,9 +114,12 @@ nav {
   margin-bottom: 2.5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between; /* Alinear items flex desde el comienzo */
-  align-items: start; /* Agrupa los elementos desde el inicio */
-  text-align: center; /* Alinea el texto al centro */
+  justify-content: space-between;
+  /* Alinear items flex desde el comienzo */
+  align-items: start;
+  /* Agrupa los elementos desde el inicio */
+  text-align: center;
+  /* Alinea el texto al centro */
   overflow: hidden;
   padding: 30px;
 }
@@ -127,12 +166,12 @@ nav {
 }
 
 .libros:hover {
-  background: linear-gradient(rgb(77, 85 , 9), #f4e89c);
+  background: linear-gradient(rgb(77, 85, 9), #f4e89c);
   transition: background-color 0.5s;
 }
 
 .titulo-libro {
-  font-size:x-large;
+  font-size: x-large;
   font-weight: 400;
   text-decoration: none;
 }
@@ -192,12 +231,12 @@ footer {
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-.generos-mas-buscados{
-  justify-content: space-between;
-  overflow: scroll;
-}
+  .generos-mas-buscados {
+    justify-content: space-between;
+    overflow: scroll;
+  }
 
-/* #contenedor-libros{
+  /* #contenedor-libros{
   margin: 0 auto;
 } */
 
@@ -205,20 +244,20 @@ footer {
 
 /* Celulares */
 @media screen and (max-width: 767px) {
-  .logo img{
+  .logo img {
     display: none
   }
 
-  nav{
+  nav {
     height: auto;
   }
 
-    .generos-mas-buscados{
+  .generos-mas-buscados {
     overflow: scroll;
     justify-content: space-between;
   }
 
- 
+
 }
 
 
@@ -263,7 +302,7 @@ footer {
 
 .boton-compra {
   width: 10em;
-  height: 5em;  
+  height: 5em;
   align-self: flex-end;
   border: 1px solid #000;
   font-size: 20px;
@@ -273,9 +312,10 @@ footer {
   color: #FFF;
   box-shadow: inset -5em 0 0 0 rgb(112, 122, 19), inset 5em 0 0 0 rgb(112, 122, 19);
   transition: 1s ease-in;
-  }
+}
 
 /* Pagina inicio de sesion y registro */
+
 .main-login {
   margin: 0;
   padding: 0;
@@ -285,14 +325,17 @@ footer {
   height: 70vh;
 }
 
-.form-login{
+.form-login {
   width: 40vh;
 }
 
 .login-container {
   padding: 50px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  background-image: url("../Imagenes/Background/sincerely-media-_-hjiem5TqI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .h2-login {
@@ -329,17 +372,31 @@ footer {
   transition: background-color 0.3s ease;
 }
 
+.register-button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(149, 163, 17);
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 button:hover {
   background-color: rgb(93, 102, 11);
 }
 
-.error{
+.error {
+  position: relative;
+  bottom: 20px;
+  left: 2px;
   color: red;
-  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.form-login input.error{
-  border: 2px solid red; 
+input.error-input {
+  border: 2px solid red;
 }
 
 /* Específico página libro */
@@ -383,7 +440,7 @@ button:hover {
 
 .boton-compra {
   width: 10em;
-  height: 5em;  
+  height: 5em;
   align-self: flex-end;
   border: 1px solid #000;
   font-size: 20px;
@@ -393,46 +450,46 @@ button:hover {
   color: #FFF;
   box-shadow: inset -5em 0 0 0 rgb(112, 122, 19), inset 5em 0 0 0 rgb(112, 122, 19);
   transition: 1s ease-in;
-  }
+}
 
-.inferior{
+.inferior {
   width: 95%;
   margin: 0 2.5% 25px 2.5%;
 }
 
-.ficha-tecnica{
+.ficha-tecnica {
   position: relative;
   left: 10em
 }
 
-table{
+table {
   border-spacing: 0;
-  }
+}
 
-th{
+th {
   border-bottom: 1px solid #000;
   border-right: 1px solid #000;
   padding: 5px;
 }
 
-td{
+td {
   border-bottom: 1px solid #000;
   padding: 5px;
 }
 
 
 /* Para páginas de géneros */
-#libros-genero{
+#libros-genero {
   width: 90%;
   margin: 25px 5%;
 }
 
-.main-container{
+.main-container {
   display: flex;
   flex-direction: column;
 }
 
-#contenedor-libros{
+#contenedor-libros {
   width: 100%;
   min-height: fit-content;
   display: flex;
@@ -440,7 +497,7 @@ td{
   justify-content: space-between;
 }
 
-.pagination{
+.pagination {
   align-self: center;
   margin: 25px 0;
   border: 1px solid #000;
@@ -448,11 +505,11 @@ td{
   border-radius: 10px;
 }
 
-.pagination a{
+.pagination a {
   color: #000;
   margin: 0px 10px;
 }
 
-.page-link{
+.page-link {
   text-decoration: none;
 }
