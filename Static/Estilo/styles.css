@@ -1,0 +1,515 @@
+@font-face {
+  font-family: 'roboto-slab';
+  src: url(../../Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'roboto-slab';
+}
+
+header {
+  background: linear-gradient(rgb(77, 85, 9), #f4e89c);
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+body {
+  background-color: #f4e89c;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Asegura que el contenido cubra al menos la altura completa de la ventana */
+}
+
+/*Nav*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+nav ul li a{
+  display: flex;
+  align-items: center;
+}
+
+nav ul{
+  list-style: none;
+}
+
+.icono{
+  width: 40px; /* Tamaño de la imagen */
+  height: auto; /* Autoajuste de la altura */
+  display: block; /* Para que se respete el tamaño especificado */
+  margin: 0 auto 5px;
+  position: relative;
+  top: 1px;
+  right: 3px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.header-nav a:hover {
+  background: none
+}
+/*animacion nav*/
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.animacion-salto {
+  animation: bounce 0.8s infinite;
+}
+
+.titulo-mas-vendidos {
+  text-align: center;
+}
+
+.contenedor {
+  border: 2px solid #000;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 2.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Alinear items flex desde el comienzo */
+  align-items: start;
+  /* Agrupa los elementos desde el inicio */
+  text-align: center;
+  /* Alinea el texto al centro */
+  overflow: hidden;
+  padding: 30px;
+}
+
+
+
+.genero {
+  margin: 10px;
+}
+
+.genero:hover {
+  font-weight: bold;
+  scale: 1.05;
+}
+
+.imagen-gen {
+  width: 200px;
+  /* Ancho deseado */
+  height: 200px;
+}
+
+
+.nombre-genero {
+  font-size: 24px;
+}
+
+.top-libros {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+.title-top-libros {
+  text-align: center;
+}
+
+.libros {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: 0.5px;
+  border-style: none;
+  border-color: gray;
+}
+
+.libros:hover {
+  background: linear-gradient(rgb(77, 85, 9), #f4e89c);
+  transition: background-color 0.5s;
+}
+
+.titulo-libro {
+  font-size: x-large;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.titulo-libro a {
+  text-decoration: none;
+  color: #000;
+}
+
+.portada-libro {
+  text-align: center;
+  margin: 10px;
+}
+
+.portada-libro img {
+  width: 168px;
+  height: 240px;
+  padding: 3px;
+}
+
+.precio {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.title-lista-generos {
+  text-align: center;
+}
+
+.lista-generos {
+  width: 95%;
+  margin: 10px 2.5%;
+}
+
+.lista {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: scroll;
+}
+
+footer {
+  margin-top: auto;
+  background-color: rgb(93, 102, 11);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .generos-mas-buscados {
+    justify-content: space-between;
+    overflow: scroll;
+  }
+
+  /* #contenedor-libros{
+  margin: 0 auto;
+} */
+
+}
+
+/* Celulares */
+@media screen and (max-width: 767px) {
+  .logo img {
+    display: none
+  }
+
+  nav {
+    height: auto;
+  }
+
+  .generos-mas-buscados {
+    overflow: scroll;
+    justify-content: space-between;
+  }
+
+
+}
+
+
+/* Específico página libro */
+
+.superior {
+  margin: 25px 2.5%;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.portada-grande {
+  text-align: center;
+  margin: 5px;
+}
+
+.detalles-libro-grande {
+  width: 80%;
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detalles-libro-grande p {
+  margin: 3px
+}
+
+.titulo-grande {
+  font-size: 45px;
+}
+
+.precio-grande {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.sinopsis h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.boton-compra {
+  width: 10em;
+  height: 5em;
+  align-self: flex-end;
+  border: 1px solid #000;
+  font-size: 20px;
+}
+
+.boton-compra:hover {
+  color: #FFF;
+  box-shadow: inset -5em 0 0 0 rgb(112, 122, 19), inset 5em 0 0 0 rgb(112, 122, 19);
+  transition: 1s ease-in;
+}
+
+/* Pagina inicio de sesion y registro */
+
+.main-login {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.form-login {
+  width: 40vh;
+}
+
+.login-container {
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  background-image: url("../Imagenes/Background/sincerely-media-_-hjiem5TqI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.h2-login {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.input-login {
+  margin-bottom: 20px;
+}
+
+/*.input-login label {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+}*/
+
+.input-login input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(149, 163, 17);
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(149, 163, 17);
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(93, 102, 11);
+}
+
+.error {
+  position: relative;
+  bottom: 20px;
+  left: 2px;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+input.error-input {
+  border: 2px solid red;
+}
+
+/* Específico página libro */
+
+.superior {
+  margin: 25px 2.5%;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.portada-grande {
+  text-align: center;
+  margin: 5px;
+}
+
+.detalles-libro-grande {
+  width: 80%;
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detalles-libro-grande p {
+  margin: 3px
+}
+
+.titulo-grande {
+  font-size: 45px;
+}
+
+.precio-grande {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.sinopsis h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.boton-compra {
+  width: 10em;
+  height: 5em;
+  align-self: flex-end;
+  border: 1px solid #000;
+  font-size: 20px;
+}
+
+.boton-compra:hover {
+  color: #FFF;
+  box-shadow: inset -5em 0 0 0 rgb(112, 122, 19), inset 5em 0 0 0 rgb(112, 122, 19);
+  transition: 1s ease-in;
+}
+
+.inferior {
+  width: 95%;
+  margin: 0 2.5% 25px 2.5%;
+}
+
+.ficha-tecnica {
+  position: relative;
+  left: 10em
+}
+
+table {
+  border-spacing: 0;
+}
+
+th {
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 5px;
+}
+
+td {
+  border-bottom: 1px solid #000;
+  padding: 5px;
+}
+
+
+/* Para páginas de géneros */
+#libros-genero {
+  width: 90%;
+  margin: 25px 5%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#contenedor-libros {
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pagination {
+  align-self: center;
+  margin: 25px 0;
+  border: 1px solid #000;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.pagination a {
+  color: #000;
+  margin: 0px 10px;
+}
+
+.page-link {
+  text-decoration: none;
+}
