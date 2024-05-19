@@ -90,6 +90,6 @@ btnSend.addEventListener('click', function () {
 
     alert('Registro exitoso');
 
-    window.location.href = '../../templates/login.html';
+    window.location.href = './login.html';
 
 });
