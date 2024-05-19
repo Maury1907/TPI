@@ -213,6 +213,93 @@ nav ul{
   overflow: scroll;
 }
 
+
+
+/* Contactos */
+
+.pagina-contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section{
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.pagina-contacto{
+  background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(../Imagenes/libros.jpg) center;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-pagina-contacto{
+  color: #fff;
+font-size: 40px;
+}
+
+
+.wrap-two-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+}
+.column-half-1 p{
+  margin: 20px;
+}
+.column-half p{
+  margin: 20px;
+}
+
+.formulario-contacto{
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+}
+
+.formulario-contacto input, .formulario-contacto{
+margin: .5rem 0;
+padding: .5rem .2;
+}
+
+.formulario-contacto button{
+ 
+  border: none;
+  padding: .5rem 1rem;
+  background-color: #f4e89c;
+  color: black;
+  font-size: 1.1rem;
+  
+}
+
+.mapa-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media(max-width: 640px){
+  .wrap-two-column{
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+  }
+}
+@media(max-width: 900px){
+ .formulario-contacto{
+  width: 100%;
+ }
+}
+
+
+
+
+
+/* 
 footer {
   margin-top: auto;
   background-color: rgb(93, 102, 11);
@@ -225,7 +312,106 @@ footer {
 .footer a {
   text-decoration: none;
   color: #FFF;
+} */
+
+
+/* Footer */
+.pie-pagina {
+  background-color: rgb(93, 102, 11);
+  width: 100%;
+  margin: 0;
 }
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 200px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin: 10px 20px 10px 20px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box a {
+  color: #FFF;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.pie-pagina .grupo-1 .box ul {
+  margin: 10px;
+
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 15px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: rgb(93, 102, 11);
+  text-align: center;
+  font-size: 40px;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: black;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: rgb(93, 102, 11);
+  padding: 15px 10px;
+  text-align: center;
+  color: #FFF;
+}
+
+.pie-pagina .grupo-2 p {
+  font-size: 13px;
+}
+
+@media screen and (max-width:800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 

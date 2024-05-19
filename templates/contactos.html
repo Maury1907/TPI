@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Estilo/styles.css">
+    <link rel="stylesheet" href="../Static/Estilo/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Contactos</title>
 </head>
@@ -14,12 +14,23 @@
         <!--seccion de menu de navegacion-->
         <!--Esta seccion esta contenida en el "header", se podria agregar una barra de busqueda-->
         <nav class="navegacion">
-            <div class="logo"><a href="../Index.html"><img src="../Imagenes/Icono.png" alt="logo-laberinto">
-            </a>
-                <h1>Laberinto de Letras</h1>
-           
+            <div class="logo"> <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
+              <h1>Laberinto de Letras</h1>
             </div>
-        </nav>
+            <ul class="header-nav">
+              <li><a href="Index.html" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img
+                    src="../Static/Imagenes/Icons/Home.png" alt="Home" class="icono">Inicio</a></li>
+              <li><a href="../templates/Libros/en-agosto-nos-vemos.html" onmouseover="activarAnimacion(event)"
+                  onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Book.png" alt="Book"
+                    class="icono">Libros</a></li>
+              <li><a href="../templates/contactos.html" onmouseover="activarAnimacion(event)"
+                  onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png" alt="Contact"
+                    class="icono">Contactos</a></li>
+              <li><a href="../templates/login.html" onmouseover="activarAnimacion(event)"
+                  onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
+                    class="icono">Login</a></li>
+            </ul>
+          </nav>
     </header>
             <!-- <ul class="header-nav">
             <li><a href="./templates/inicio.html">Inicio</a></li>
@@ -84,7 +95,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="../Imagenes/Icono.png" alt="logo-laberinto">
+                        <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
                     </a>
                 </figure>
             </div>
