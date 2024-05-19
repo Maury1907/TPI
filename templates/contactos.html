@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../Static/Estilo/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contactos</title>
 </head>
+
 <body>
-    caca
+    <header class="header">
+        <!--seccion de menu de navegacion-->
+        <!--Esta seccion esta contenida en el "header", se podria agregar una barra de busqueda-->
+        <nav class="navegacion">
+            <div class="logo"> <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
+              <h1>Laberinto de Letras</h1>
+            </div>
+            <ul class="header-nav">
+              <li><a href="Index.html" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img
+                    src="../Static/Imagenes/Icons/Home.png" alt="Home" class="icono">Inicio</a></li>
+              <li><a href="../templates/Libros/en-agosto-nos-vemos.html" onmouseover="activarAnimacion(event)"
+                  onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Book.png" alt="Book"
+                    class="icono">Libros</a></li>
+              <li><a href="../templates/contactos.html" onmouseover="activarAnimacion(event)"
+                  onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png" alt="Contact"
+                    class="icono">Contactos</a></li>
+              <li><a href="../templates/login.html" onmouseover="activarAnimacion(event)"
+                  onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
+                    class="icono">Login</a></li>
+            </ul>
+          </nav>
+    </header>
+            <!-- <ul class="header-nav">
+            <li><a href="./templates/inicio.html">Inicio</a></li>
+            <li><a href="./templates/libros.html">Libros</a></li>
+            <li><a href="./templates/servicios.html">Servicios</a></li>
+            <li><a href="./templates/contactos.html">Contactos</a></li>
+            <li><a href="./templates/login.html">Login</a></li>
+          </ul> -->
+    
+
+    <main>
+        <section class="pagina-contacto">
+        <div class="wrap-pagina-contacto">
+            <h1>Contactos</h1>
+        </div>
+    </section>
+
+        <section class="section">
+            <div class="wrap-two-column">
+                <div class="column-half-1">
+                    <h1>Nuestros contactos</h1>
+                    <p>Tel : (011) 4572-3086</p>
+                    <p>Direccion : Av. Monroe 2922 CABA</p>
+                    <p>Email : laberintodeletras@gmail.com</p>
+                </div>
+                <div class="column-half">
+                    <h1>Formulario de contacto</h1>
+                    <p>* campos requeridos</p>
+                    <form action="" class="formulario-contacto">
+                      
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Email">
+                       
+                        <input type="text" placeholder="Asunto">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Tu consulta"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <main class="mapa">
+        <div class="mapa-2">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6934774381075!2d-58.46739992565672!3d-34.56131555525764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb680769810bd%3A0x8fc95ffd92749078!2sLABERINTO!5e0!3m2!1ses!2sar!4v1715546753265!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <ul><a href="#">Empleos</a></ul>
+                <ul><a href="#">Acerca de nosotros</a></ul>
+                <ul><a href="#">Asistencia</a></ul>
+                <ul><a href="./templates/contactos.html">Contacto</a></ul>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <div class="iconos-redes">
+                        <a class="instagram" href="#"><i class='bx bxl-instagram'></i></a>
+                        <a class="facebook" href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a class="twitter" href="#"><i class='bx bxl-twitter'></i></a>
+                        <a class="youtube" href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <p>&copy; 2024 <b>Codo a Codo</b> Todos los Derechos reservados.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
+
+<!-- <section class="contactos-centro">
+        <div>
+            <iframe
+             
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.693477438107!2d-58.4673999256567!3d-34.56131555525765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb680769810bd%3A0x8fc95ffd92749078!2sLABERINTO!5e0!3m2!1ses!2sar!4v1715531943582!5m2!1ses!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section> -->
