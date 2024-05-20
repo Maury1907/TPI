@@ -10,21 +10,40 @@
 </head>
 
 <body>
-    <header class="header">
-        <!--seccion de menu de navegacion-->
-        <!--Esta seccion esta contenida en el "header", se podria agregar una barra de busqueda-->
-        <nav class="navegacion">
-            <div class="logo"> <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
-                <h1>Laberinto de Letras</h1>
-            </div>
-            <ul class="header-nav">
-                <li><a href="../Index.html">Inicio</a></li>
-                <li><a href="#">Libros</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-                <li><a href="./login.html">Login</a></li>
+  <header class="header">
+    <a class="logo"> <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
+      <h1 class="titulo">Laberinto de Letras</h1>
+    </a>
+
+    <div class="hamburger">
+      <span class="lines"></span>
+      <span class="lines"></span>
+      <span class="lines"></span>
+    </div>
+    <nav class="navegacion">
+      <ul id="nav-links" class="header-nav">
+        <li><a href="Index.html" class="links" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img
+              src="../Static/Imagenes/Icons/Home.png" alt="Home" class="icono">Inicio</a></li>
+        <li><a href="#" class="links" onmouseover="activarAnimacion(event)"
+            onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Book.png" alt="Book"
+              class="icono">Libros</a>
+            <ul class="sub-menu">
+              <li> <a href="./ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+              <li> <a href="./fantasia.html" class="links"> Fantasía </a></li>
+              <li> <a href="./ficcion.html" class="links"> Ficción literaria </a></li>
+              <li> <a href="./misterio.html" class="links"> Misterio </a></li>
+              <li> <a href="./romantico.html" class="links"> Romántico </a></li>
             </ul>
-        </nav>
-    </header>
+            </li>
+        <li><a href="./contactos.html" class="links" onmouseover="activarAnimacion(event)"
+            onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png" alt="Contact"
+              class="icono">Contactos</a></li>
+        <li><a href="./login.html" class="links" onmouseover="activarAnimacion(event)"
+            onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
+              class="icono">Login</a></li>
+      </ul>
+    </nav>
+  </header>
     <main>
         <section class="main-container">
             <section id="libros-genero">
@@ -314,6 +333,8 @@
             <ul><a href="contacto.html">Contacto</a></ul>
         </div>
     </footer>
+    <script src="../Static/js/Hamburguesa.js"></script>
+    <script src="../Static/js/Animaciones.js"></script>
 </body>
 
 </html>
