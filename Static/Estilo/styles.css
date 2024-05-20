@@ -46,7 +46,7 @@ nav ul{
   list-style: none;
 }
 
-.icono{
+nav .icono{
   width: 40px; /* Tamaño de la imagen */
   height: auto; /* Autoajuste de la altura */
   display: block; /* Para que se respete el tamaño especificado */
@@ -242,17 +242,34 @@ nav ul{
 font-size: 40px;
 }
 
-
 .wrap-two-column{
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 4rem;
+  justify-items: center;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
 }
+
 .column-half-1 p{
   margin: 20px;
+  width: 100%;
 }
+
+.column-half-1 .icono{
+  width: 40px; /* Tamaño de la imagen */
+  height: auto; /* Autoajuste de la altura */
+  display: inline; /* Para que se respete el tamaño especificado */
+  margin: 0 auto 5px;
+  position: relative;
+  top: 18px;
+  right: 3px;
+}
+
 .column-half p{
   margin: 20px;
+  width: 100%;
 }
 
 .formulario-contacto{
@@ -262,18 +279,27 @@ font-size: 40px;
 }
 
 .formulario-contacto input, .formulario-contacto{
-margin: .5rem 0;
-padding: .5rem .2;
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+.formulario-contacto input, .formulario-contacto textarea{
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 .formulario-contacto button{
- 
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(149, 163, 17);
   border: none;
-  padding: .5rem 1rem;
-  background-color: #f4e89c;
-  color: black;
-  font-size: 1.1rem;
-  
+  color: #fff;
+  font-size: 17px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
 .mapa-2{
@@ -295,7 +321,22 @@ padding: .5rem .2;
  }
 }
 
+.error-contacto {
+  position: relative;
+  bottom: 20px;
+  left: 2px;
+  color: red;
+}
 
+.error-contacto-textarea {
+  position: relative;
+  left: 2px;
+  color: red;
+}
+
+input.error-input-contacto, textarea.error-input-contacto  {
+  border: 2px solid red;
+}
 
 
 
@@ -404,17 +445,6 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .generos-mas-buscados {
@@ -516,7 +546,7 @@ footer {
 }
 
 .login-container {
-  padding: 50px;
+  padding: 120px;
   border-radius: 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
   background-image: url("../Imagenes/Background/sincerely-media-_-hjiem5TqI-unsplash.jpg");
@@ -527,7 +557,7 @@ footer {
 .h2-login {
   margin-top: 0;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .input-login {
@@ -578,7 +608,8 @@ button:hover {
   bottom: 20px;
   left: 2px;
   color: red;
-  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  background-color: rgba(0, 50, 30, 0.8);
 }
 
 input.error-input {
