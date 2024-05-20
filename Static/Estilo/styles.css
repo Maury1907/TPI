@@ -79,7 +79,7 @@ nav ul ul li a {
   padding: 14px 16px;
 }
 
-.sub-menu li a:hover{
+.sub-menu li a:hover {
   background-color: rgb(77, 85, 9);
 }
 
@@ -562,10 +562,12 @@ textarea.error-input-contacto {
     grid-gap: 30px;
     padding: 35px 0px;
   }
+
   nav .icono {
     width: 20px;
     /* Tamaño de la imagen */
-    height: auto;}
+    height: auto;
+  }
 
 }
 
