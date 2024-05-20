@@ -578,10 +578,6 @@ textarea.error-input-contacto {
     overflow: scroll;
   }
 
-  /* #contenedor-libros{
-  margin: 0 auto;
-} */
-
 }
 
 /* Celulares */
@@ -597,6 +593,11 @@ textarea.error-input-contacto {
   .generos-mas-buscados {
     overflow: scroll;
     justify-content: space-between;
+  }
+
+  #superior {
+    display: flex;
+    flex-direction: column;
   }
 
 }
