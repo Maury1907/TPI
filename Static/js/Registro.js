@@ -5,6 +5,7 @@ btnSend.addEventListener('click', function () {
     let username = document.querySelector("#username");
     let password = document.querySelector("#password");
     let repeatpassword = document.querySelector("#repeatpassword");
+    let terminos = document.querySelector("#terminos");
     // Expresiones regulares
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -14,10 +15,20 @@ btnSend.addEventListener('click', function () {
     document.querySelector("#error-password").innerHTML = "";
     document.querySelector("#error-email").innerHTML = "";
     document.querySelector("#error-repeatpassword").innerHTML = "";
+    document.querySelector("#error-terminos").innerHTML = "";
     let errorInputs = document.querySelectorAll('.error-input');
     errorInputs.forEach(input => {
         input.classList.remove('error-input');
     });
+
+    terminos.addEventListener('change', verificarTerminos);
+    function verificarTerminos() {
+        let errorTerminos = document.querySelector("#error-terminos");
+        if (terminos.checked) {
+            errorTerminos.innerHTML = "";
+            terminos.classList.remove('error-input-checkbox');
+        }
+    }
 
     email.addEventListener('input', function(){
         if (!emailRegex.test(email.value.trim())) {
@@ -85,6 +96,12 @@ btnSend.addEventListener('click', function () {
     } else if (repeatpassword.value.trim() == '') {
         document.querySelector("#error-repeatpassword").innerHTML = "Debes repetir la contraseña.";
         repeatpassword.classList.add('error-input');
+        return;
+    }
+
+    if (!terminos.checked) {
+        document.querySelector("#error-terminos").innerHTML = "Debes aceptar los términos y condiciones";
+        terminos.classList.add('error-input-checkbox');
         return;
     }
 

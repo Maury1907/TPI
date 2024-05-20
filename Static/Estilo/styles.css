@@ -37,19 +37,22 @@ nav {
   text-decoration: none;
 }
 
-nav ul li a{
+nav ul li a {
   display: flex;
   align-items: center;
 }
 
-nav ul{
+nav ul {
   list-style: none;
 }
 
-.icono{
-  width: 40px; /* Tamaño de la imagen */
-  height: auto; /* Autoajuste de la altura */
-  display: block; /* Para que se respete el tamaño especificado */
+nav .icono {
+  width: 40px;
+  /* Tamaño de la imagen */
+  height: auto;
+  /* Autoajuste de la altura */
+  display: block;
+  /* Para que se respete el tamaño especificado */
   margin: 0 auto 5px;
   position: relative;
   top: 1px;
@@ -83,14 +86,22 @@ nav ul{
 .header-nav a:hover {
   background: none
 }
+
 /*animacion nav*/
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   60% {
     transform: translateY(-15px);
   }
@@ -217,19 +228,19 @@ nav ul{
 
 /* Contactos */
 
-.pagina-contacto{
+.pagina-contacto {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section{
+.section {
   max-width: 1200px;
   margin: 3rem auto;
   padding: 1rem;
 }
 
-.pagina-contacto{
+.pagina-contacto {
   background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(../Imagenes/libros.jpg) center;
   background-size: cover;
   height: 200px;
@@ -237,65 +248,114 @@ nav ul{
   justify-content: center;
   align-items: center;
 }
-.wrap-pagina-contacto{
+
+.wrap-pagina-contacto {
   color: #fff;
-font-size: 40px;
+  font-size: 40px;
 }
 
-
-.wrap-two-column{
+.wrap-two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 4rem;
-}
-.column-half-1 p{
-  margin: 20px;
-}
-.column-half p{
-  margin: 20px;
+  justify-items: center;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.formulario-contacto{
+.column-half-1 p {
+  margin: 20px;
+  width: 100%;
+}
+
+.column-half-1 .icono {
+  width: 40px;
+  /* Tamaño de la imagen */
+  height: auto;
+  /* Autoajuste de la altura */
+  display: inline;
+  /* Para que se respete el tamaño especificado */
+  margin: 0 auto 5px;
+  position: relative;
+  top: 18px;
+  right: 3px;
+}
+
+.column-half p {
+  margin: 20px;
+  width: 100%;
+}
+
+.formulario-contacto {
   display: flex;
   flex-flow: column;
   width: 50%;
 }
 
-.formulario-contacto input, .formulario-contacto{
-margin: .5rem 0;
-padding: .5rem .2;
+.formulario-contacto input,
+.formulario-contacto {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.formulario-contacto button{
- 
+.formulario-contacto input,
+.formulario-contacto textarea {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.formulario-contacto button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(149, 163, 17);
   border: none;
-  padding: .5rem 1rem;
-  background-color: #f4e89c;
-  color: black;
-  font-size: 1.1rem;
-  
+  color: #fff;
+  font-size: 17px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
-.mapa-2{
+.mapa-2 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-@media(max-width: 640px){
-  .wrap-two-column{
+@media(max-width: 640px) {
+  .wrap-two-column {
     grid-template-columns: 1fr;
     margin-left: 50px;
   }
 }
-@media(max-width: 900px){
- .formulario-contacto{
-  width: 100%;
- }
+
+@media(max-width: 900px) {
+  .formulario-contacto {
+    width: 100%;
+  }
 }
 
+.error-contacto {
+  position: relative;
+  bottom: 20px;
+  left: 2px;
+  color: red;
+}
 
+.error-contacto-textarea {
+  position: relative;
+  left: 2px;
+  color: red;
+}
+
+input.error-input-contacto,
+textarea.error-input-contacto {
+  border: 2px solid red;
+}
 
 
 
@@ -395,6 +455,11 @@ footer {
   font-size: 13px;
 }
 
+.pie-pagina li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width:800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -403,17 +468,6 @@ footer {
     padding: 35px 0px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -503,7 +557,7 @@ footer {
 /* Pagina inicio de sesion y registro */
 
 .main-login {
-  margin: 0;
+  margin: 50px 0px 60px 0px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -516,18 +570,19 @@ footer {
 }
 
 .login-container {
-  padding: 50px;
+  padding: 140px;
   border-radius: 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
   background-image: url("../Imagenes/Background/sincerely-media-_-hjiem5TqI-unsplash.jpg");
   background-size: cover;
   background-position: center;
+
 }
 
 .h2-login {
   margin-top: 0;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .input-login {
@@ -545,6 +600,25 @@ footer {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+}
+
+.checkbox-login {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#terminos {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.checkbox-login label {
+  position: relative;
+  bottom: 2px;
 }
 
 .login-button {
@@ -567,10 +641,59 @@ footer {
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
 button:hover {
   background-color: rgb(93, 102, 11);
+}
+
+.button-return-login {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.return-login {
+  width: 100%;
+  padding: 10px 65px 10px 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  text-decoration: none;
+
+}
+
+.return-login:hover {
+  background-color: rgb(187, 187, 187);
+}
+
+.button-goto-register {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.goto-register {
+  width: 100%;
+  padding: 10px 85px 10px 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  text-decoration: none;
+
+}
+
+.goto-register:hover {
+  background-color: rgb(187, 187, 187);
 }
 
 .error {
@@ -578,11 +701,25 @@ button:hover {
   bottom: 20px;
   left: 2px;
   color: red;
-  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  background-color: rgba(0, 50, 30, 0.8);
+}
+
+.error-checkbox {
+  position: relative;
+  bottom: 0px;
+  left: 2px;
+  color: red;
+  font-weight: bold;
+  background-color: rgba(0, 50, 30, 0.8);
 }
 
 input.error-input {
   border: 2px solid red;
+}
+
+input.error-input-checkbox {
+  outline: 2px solid red;
 }
 
 /* Específico página libro */
