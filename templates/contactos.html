@@ -12,40 +12,36 @@
 
 <body>
     <header class="header">
-        <a class="logo"> <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
-            <h1 class="titulo">Laberinto de Letras</h1>
-        </a>
-
-        <div class="hamburger">
-            <span class="lines"></span>
-            <span class="lines"></span>
-            <span class="lines"></span>
-        </div>
+        <!--seccion de menu de navegacion-->
+        <!--Esta seccion esta contenida en el "header", se podria agregar una barra de busqueda-->
         <nav class="navegacion">
-            <ul id="nav-links" class="header-nav">
-                <li><a href="Index.html" class="links" onmouseover="activarAnimacion(event)"
+            <div class="logo"> <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+                <h1>Laberinto de Letras</h1>
+            </div>
+            <ul class="header-nav">
+                <li><a href="Index.html" onmouseover="activarAnimacion(event)"
                         onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Home.png" alt="Home"
                             class="icono">Inicio</a></li>
-                <li><a href="#" class="links" onmouseover="activarAnimacion(event)"
+                <li><a href="../templates/Libros/en-agosto-nos-vemos.html" onmouseover="activarAnimacion(event)"
                         onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Book.png" alt="Book"
-                            class="icono">Libros</a>
-                    <ul class="sub-menu">
-                        <li> <a href="./ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
-                        <li> <a href="./fantasia.html" class="links"> Fantasía </a></li>
-                        <li> <a href="./ficcion.html" class="links"> Ficción literaria </a></li>
-                        <li> <a href="./misterio.html" class="links"> Misterio </a></li>
-                        <li> <a href="./romantico.html" class="links"> Romántico </a></li>
-                    </ul>
-                </li>
-                <li><a href="./contactos.html" class="links" onmouseover="activarAnimacion(event)"
+                            class="icono">Libros</a></li>
+                <li><a href="../templates/contactos.html" onmouseover="activarAnimacion(event)"
                         onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png"
                             alt="Contact" class="icono">Contactos</a></li>
-                <li><a href="./login.html" class="links" onmouseover="activarAnimacion(event)"
+                <li><a href="../templates/login.html" onmouseover="activarAnimacion(event)"
                         onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
                             class="icono">Login</a></li>
             </ul>
         </nav>
     </header>
+    <!-- <ul class="header-nav">
+            <li><a href="./templates/inicio.html">Inicio</a></li>
+            <li><a href="./templates/libros.html">Libros</a></li>
+            <li><a href="./templates/servicios.html">Servicios</a></li>
+            <li><a href="./templates/contactos.html">Contactos</a></li>
+            <li><a href="./templates/login.html">Login</a></li>
+          </ul> -->
+
 
     <main>
         <section class="pagina-contacto">
@@ -59,10 +55,8 @@
                 <div class="column-half-1">
                     <h1>Nuestros contactos</h1>
                     <p><img src="../Static/Imagenes/Icons/Phone.png" alt="Phone" class="icono">Tel : (011) 4572-3086</p>
-                    <p><img src="../Static/Imagenes/Icons/Location.png" alt="Location" class="icono">Direccion : Av.
-                        Monroe 2922 CABA</p>
-                    <p><img src="../Static/Imagenes/Icons/Mail.png" alt="Mail" class="icono">Email: <a
-                            href="mailto:laberintodeletras@gmail.com">laberintodeletras@gmail.com</a></p>
+                    <p><img src="../Static/Imagenes/Icons/Location.png" alt="Location" class="icono">Direccion : Av. Monroe 2922 CABA</p>
+                    <p><img src="../Static/Imagenes/Icons/Mail.png" alt="Mail" class="icono">Email: <a href="mailto:laberintodeletras@gmail.com">laberintodeletras@gmail.com</a></p>
                 </div>
                 <div class="column-half">
                     <h1>Formulario de contacto</h1>
@@ -74,8 +68,7 @@
                         <span class="error-contacto" id="error-email"></span>
                         <input type="text" placeholder="Asunto" id="contacto-asunto" required>
                         <span class="error-contacto" id="error-asunto"></span>
-                        <textarea id="contacto-consulta" cols="30" rows="5" placeholder="  Tu consulta"
-                            required></textarea>
+                        <textarea id="contacto-consulta" cols="30" rows="5" placeholder="  Tu consulta" required></textarea>
                         <span class="error-contacto-textarea" id="error-consulta"></span>
                         <button type="button" class="contact-button">Enviar</button>
                     </form>
@@ -95,7 +88,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
+                        <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
                     </a>
                 </figure>
             </div>
@@ -125,8 +118,6 @@
 </body>
 <script src="../Static/js/Animaciones.js"></script>
 <script src="../Static/js/Contactos.js"></script>
-<script src="../Static/js/Hamburguesa.js"></script>
-
 </html>
 
 <!-- <section class="contactos-centro">
