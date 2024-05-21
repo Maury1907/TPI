@@ -5,23 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laberinto de Letras</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../Static/Estilo/styles.css">
     <link rel="shortcut icon" href="../Static/Imagenes/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
-        <!--seccion de menu de navegacion-->
-        <!--Esta seccion esta contenida en el "header", se podria agregar una barra de busqueda-->
+        <a class="logo"> <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+            <h1 class="titulo">Laberinto de Letras</h1>
+        </a>
+
+        <div class="hamburger">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
         <nav class="navegacion">
-            <div class="logo"> <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
-                <h1>Laberinto de Letras</h1>
-            </div>
-            <ul class="header-nav">
-                <li><a href="../Index.html">Inicio</a></li>
-                <li><a href="#">Libros</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-                <li><a href="./login.html">Login</a></li>
+            <ul id="nav-links" class="header-nav">
+                <li><a href="../Index.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Home.png" alt="Home"
+                            class="icono">Inicio</a></li>
+                <li><a href="#" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Book.png" alt="Book"
+                            class="icono">Libros</a>
+                    <ul class="sub-menu">
+                        <li> <a href="./ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+                        <li> <a href="./fantasia.html" class="links"> Fantasía </a></li>
+                        <li> <a href="./ficcion.html" class="links"> Ficción literaria </a></li>
+                        <li> <a href="./misterio.html" class="links"> Misterio </a></li>
+                        <li> <a href="./romantico.html" class="links"> Romántico </a></li>
+                    </ul>
+                </li>
+                <li><a href="./contactos.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png"
+                            alt="Contact" class="icono">Contactos</a></li>
+                <li><a href="./login.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
+                            class="icono">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -33,9 +54,8 @@
                 </div>
                 <div id="contenedor-libros">
                     <div class="libros" name="alas-de-hierro">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/alas-de-hierro.jpg"
-                                    alt="Alas de Hierro"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/alas-de-hierro.jpg" alt="Alas de Hierro"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Alas de Hierro</span></a></p>
@@ -45,9 +65,8 @@
                         </div>
                     </div>
                     <div class="libros" name="alas-de-sangre">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/alas-de-sangre.jpg"
-                                    alt="Alas de Sangre"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/alas-de-sangre.jpg" alt="Alas de Sangre"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Alas de Sangre</span></a></p>
@@ -57,9 +76,9 @@
                         </div>
                     </div>
                     <div class="libros" name="el-pozo-de-la-ascension">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/el-pozo-de-la-ascension.jpg"
-                                    alt="El Pozo de la Ascension"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-pozo-de-la-ascension.jpg"
+                                alt="El Pozo de la Ascension"></a>
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>El Pozo de la Ascension</span></a></p>
                             <p class="genero-libro">Fantasía</p>
@@ -68,9 +87,9 @@
                         </div>
                     </div>
                     <div class="libros" name="el-heroe-de-las-eras">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/el-heroe-de-las-eras.jpg"
-                                    alt="El Heroe De las Eras"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-heroe-de-las-eras.jpg"
+                                alt="El Heroe De las Eras"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>El Héroe de las Eras</span></a></p>
@@ -80,9 +99,8 @@
                         </div>
                     </div>
                     <div class="libros" name="los-dias-del-venado">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/los-dias-del-venado.jpg"
-                                    alt="Los Dias Del Venado"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-dias-del-venado.jpg" alt="Los Dias Del Venado"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Los Días del Venado</span></a></p>
@@ -92,9 +110,8 @@
                         </div>
                     </div>
                     <div class="libros" name="choque-de-reyes">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/choque-de-reyes.jpg"
-                                    alt="Choque de Reyes"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/choque-de-reyes.jpg" alt="Choque de Reyes"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Choque de Reyes</span></a></p>
@@ -104,9 +121,8 @@
                         </div>
                     </div>
                     <div class="libros" name="buenos-presagios">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/buenos-presagios.jpg"
-                                    alt="Buenos Presagios"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/buenos-presagios.jpg" alt="Buenos Presagios"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Buenos Presagios</span></a></p>
@@ -116,9 +132,8 @@
                         </div>
                     </div>
                     <div class="libros" name="juego-de-tronos">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/juego-de-tronos.jpg"
-                                    alt="Juego de Tronos"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/juego-de-tronos.jpg" alt="Juego de Tronos"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Juego de Tronos</span></a></p>
@@ -128,9 +143,9 @@
                         </div>
                     </div>
                     <div class="libros" name="fuego-y-sangre">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/fuego-y-sangre.jpeg" alt=""></a>
-                       
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/fuego-y-sangre.jpeg" alt=""></a>
+
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Fuego y Sangre</span></a></p>
@@ -140,9 +155,8 @@
                         </div>
                     </div>
                     <div class="libros" name="elantris">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/elantris.jpg"
-                                    alt="Elantris"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/elantris.jpg" alt="Elantris"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Elantris</span></a></p>
@@ -152,8 +166,8 @@
                         </div>
                     </div>
                     <div class="libros" name="puro">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/puro.jpg" alt="Puro"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/puro.jpg" alt="Puro"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Puro</span></a></p>
@@ -165,10 +179,10 @@
 
 
                     <div class="libros" name="los-enclaves-dorados">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/los-enclaves-dorados.jpg"
-                                    alt="Los Enclaves Dorados"></a>
-                    
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-enclaves-dorados.jpg"
+                                alt="Los Enclaves Dorados"></a>
+
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Los Enclaves Dorados</span></a></p>
@@ -178,10 +192,9 @@
                         </div>
                     </div>
                     <div class="libros" name="tormenta-de-espadas">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/tormenta-de-espadas.jpg"
-                                    alt="Tormenta de Espadas"></a>
-                 
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/tormenta-de-espadas.jpg" alt="Tormenta de Espadas"></a>
+
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Tormenta de Espadas</span></a></p>
@@ -191,10 +204,10 @@
                         </div>
                     </div>
                     <div class="libros" name="el-camino-de-los-reyes">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/el-camino-de-los-reyes.JPG"
-                                    alt="El Camino de los Reyes"></a>
-                  
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-camino-de-los-reyes.JPG"
+                                alt="El Camino de los Reyes"></a>
+
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>El Camino de los Reyes</span></a></p>
@@ -204,10 +217,9 @@
                         </div>
                     </div>
                     <div class="libros" name="los-fragiles-hilos-del-poder">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img
-                                    src="../Static/Imagenes/Portadas/los-fragiles-hilos-del-poder.jpg"
-                                    alt="Los Fragiles Hilos del Poder" width="168" height="240"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-fragiles-hilos-del-poder.jpg"
+                                alt="Los Fragiles Hilos del Poder" width="168" height="240"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Los Fragiles Hilos del Poder</span></a></p>
@@ -217,9 +229,8 @@
                         </div>
                     </div>
                     <div class="libros" name="festin-de-cuervos">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/festin-de-cuervos.jpg"
-                                    alt="Festin de Cuervos"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/festin-de-cuervos.jpg" alt="Festin de Cuervos"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Festín de Cuervos</span></a></p>
@@ -229,9 +240,8 @@
                         </div>
                     </div>
                     <div class="libros" name="danza-de-dragones">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/danza-de-dragones.jpg"
-                                    alt="Danza de Dragones"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/danza-de-dragones.jpg" alt="Danza de Dragones"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Danza de Dragones</span></a></p>
@@ -241,11 +251,10 @@
                         </div>
                     </div>
                     <div class="libros" name="trenza-del-mar-esmeralda">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img
-                                    src="../Static/Imagenes/Portadas/trenza-del-mar-esmeralda.jpg"
-                                    alt="Trenza del Mar Esmeralda"></a>
-                       
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/trenza-del-mar-esmeralda.jpg"
+                                alt="Trenza del Mar Esmeralda"></a>
+
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Trenza del Mar Esmeralda</span></a></p>
@@ -255,9 +264,8 @@
                         </div>
                     </div>
                     <div class="libros" name="arcanum-ilimitado">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/arcanum-ilimitado.webp"
-                                    alt="Arcanum Ilimitado"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/arcanum-ilimitado.webp" alt="Arcanum Ilimitado"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Arcanum Ilimitado</span></a></p>
@@ -267,22 +275,21 @@
                         </div>
                     </div>
                     <div class="libros" name="esquirla-del-amanecer">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/esquirla-del-amanecer.jpg"
-                                    alt="Esquirla del Amanecer">
-                        
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/esquirla-del-amanecer.jpg" alt="Esquirla del Amanecer">
 
-                        <div class="detalles-libro">
-                            <p class="titulo-libro"><a href=""><span>Esquirla del Amanecer</span></a></p>
-                            <p class="genero-libro">Fantasía</p>
-                            <p class="autor">Sanderson, Brandon</p>
-                            <p class="precio">$21.499,00</p>
-                        </div>
+
+                            <div class="detalles-libro">
+                                <p class="titulo-libro"><a href=""><span>Esquirla del Amanecer</span></a></p>
+                                <p class="genero-libro">Fantasía</p>
+                                <p class="autor">Sanderson, Brandon</p>
+                                <p class="precio">$21.499,00</p>
+                            </div>
                     </div>
                     <div class="libros" name="las-cronicas-del-mundo">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/las-cronicas-del-mundo.jpg"
-                                    alt="Las Crónicas del Mundo"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/las-cronicas-del-mundo.jpg"
+                                alt="Las Crónicas del Mundo"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Las Cronicas del Mundo</span></a></p>
@@ -292,10 +299,10 @@
                         </div>
                     </div>
                     <div class="libros" name="casa-de-tierra-y-sangre">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/casa-de-tierra-y-sangre.jpg"
-                                    alt="Casa de Tierra y Sangre"></a>
-                        
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/casa-de-tierra-y-sangre.jpg"
+                                alt="Casa de Tierra y Sangre"></a>
+
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Casa de Tierra y Sangre</span></a></p>
@@ -305,9 +312,8 @@
                         </div>
                     </div>
                     <div class="libros" name="los-dias-del-fuego">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/los-dias-del-fuego.jpg"
-                                    alt="Los Dias del Fuego"></a>
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-dias-del-fuego.jpg" alt="Los Dias del Fuego"></a>
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Los Dias del Fuego</span></a></p>
@@ -317,10 +323,10 @@
                         </div>
                     </div>
                     <div class="libros" name="los-dias-de-la-sombra">
-                        <a href="./templates/Libros/en-agosto-nos-vemos.html"
-                                class="portada-libro"><img src="../Static/Imagenes/Portadas/los-dias-de-la-sombra.jpg"
-                                    alt="Los Dias de la Sombra"></a>
-                        
+                        <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-dias-de-la-sombra.jpg"
+                                alt="Los Dias de la Sombra"></a>
+
 
                         <div class="detalles-libro">
                             <p class="titulo-libro"><a href=""><span>Los Días de la Sombra</span></a></p>
@@ -341,25 +347,41 @@
             <script src="../Static/js/pagination.js"></script>
         </section>
     </main>
-    <footer class="footer">
-        <div class="redes sociales">
-            <h3>Seguí a Laberinto de Letras </h3>
-            <ul class="links-redes">
-                <li><a href="facebook">Facebook</a> </li>
-                <li> <a href="instagram">Instagram</a></li>
-                <li><a href="x">X</a> </li>
-                <li><a href="youtube">Youtube</a></li>
-            </ul>
-
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+            <ul><a href="#">Empleos (Proximamente)</a></ul>
+            <ul><a href="#">Acerca de nosotros (Proximamente)</a></ul>
+            <ul><a href="#">Asistencia (Proximamente)</a></ul>
+            <ul><a href="./contactos.html">Contacto</a></ul>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <div class="iconos-redes">
+                        <a class="instagram" href="#"><i class='bx bxl-instagram'></i></a>
+                        <a class="facebook" href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a class="twitter" href="#"><i class='bx bxl-twitter'></i></a>
+                        <a class="youtube" href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-empresa">
-            <h3>Más información de la pagina</h3>
-            <ul><a href="empleo.html">Empleos</a></ul>
-            <ul><a href="acerca-de-nosotros.html">Acerca de nosotros</a></ul>
-            <ul><a href="asistencia.html">Asistencia</a></ul>
-            <ul><a href="contacto.html">Contacto</a></ul>
+        <div class="grupo-2">
+            <p>&copy; 2024 <b>Codo a Codo</b> Todos los Derechos reservados.</p>
         </div>
     </footer>
+    <script src="../Static/js/Animaciones.js"></script>
+    <script src="../Static/js/Hamburguesa.js"></script>
+
 </body>
 
 </html>

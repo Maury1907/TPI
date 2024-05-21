@@ -12,12 +12,18 @@
 
 header {
   background: linear-gradient(rgb(77, 85, 9), #f4e89c);
-  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+}
+
+.titulo {
+  font-size: 3vw;
 }
 
 body {
@@ -31,19 +37,25 @@ body {
 
 /*Nav*/
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-}
-
-nav ul li a {
-  display: flex;
-  align-items: center;
+  margin-right: 20px;
 }
 
 nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
 }
 
 nav .icono {
@@ -59,8 +71,109 @@ nav .icono {
   right: 3px;
 }
 
+/* Estilos para sub-menu */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(rgb(77, 85, 9), #f4e89c);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul ul li {
+  width: 200px;
+  height: fit-content;
+}
+
+nav ul ul li a {
+  padding: 14px 16px;
+}
+
+.sub-menu li a:hover{
+  background-color: rgb(77, 85, 9);
+}
+
+/* Mostrar submenú al pasar el mouse */
+nav ul li:hover>ul {
+  display: block;
+  z-index: 1;
+}
+
+/* Fin de cambios menú desplegable */
+
+/* Cambios para menú hamburguesa */
+.hide {
+  top: 45px;
+  height: min-content;
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: -10px;
+    justify-self: end;
+    position: absolute;
+    right: 10px;
+  }
+
+  .lines {
+    display: block;
+    background-color: white;
+    height: 5px;
+    width: 35px;
+    border-radius: 5px;
+  }
+
+  .lines-rotate {
+    /* background-color: rgb(85, 84, 84); */
+    border-radius: 5px;
+  }
+
+  nav {
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -900px;
+    right: 0;
+    background-color: rgba(77, 85, 9, 0.9);
+    padding: 35px 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.363);
+  }
+
+  #nav-links li {
+    text-align: center;
+    width: 90vw;
+  }
+
+  #nav-links li a {
+    color: #fff;
+  }
+}
+
+/* Fin cambios Hamburguesa */
+
+
 .logo {
-  display: inline-flex;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  display: flex;
   align-items: center;
 }
 
@@ -84,7 +197,7 @@ nav .icono {
 }
 
 .header-nav a:hover {
-  background: none
+  background-color: rgb(77, 85, 9);
 }
 
 /*animacion nav*/
@@ -536,6 +649,11 @@ footer {
   nav {
     height: auto;
   }
+
+  nav .icono {
+    width: 20px;
+    /* Tamaño de la imagen */
+    height: auto;}
 
   .generos-mas-buscados {
     overflow: scroll;

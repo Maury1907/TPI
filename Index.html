@@ -13,22 +13,34 @@
 
 <body>
   <header class="header">
-    <!--seccion de menu de navegacion-->
-    <!--Esta seccion esta contenida en el "header", se podria agregar una barra de busqueda-->
+    <a class="logo"> <img src="./Static/Imagenes/lab1.png" alt="logo-laberinto">
+      <h1 class="titulo">Laberinto de Letras</h1>
+    </a>
+
+    <div class="hamburger">
+      <span class="lines"></span>
+      <span class="lines"></span>
+      <span class="lines"></span>
+    </div>
     <nav class="navegacion">
-      <div class="logo"> <img src="./Static/Imagenes/lab1.png" alt="logo-laberinto">
-        <h1>Laberinto de Letras</h1>
-      </div>
-      <ul class="header-nav">
-        <li><a href="Index.html" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img
+      <ul id="nav-links" class="header-nav">
+        <li><a href="Index.html" class="links" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img
               src="./Static/Imagenes/Icons/Home.png" alt="Home" class="icono">Inicio</a></li>
-        <li><a href="./templates/Libros/en-agosto-nos-vemos.html" onmouseover="activarAnimacion(event)"
+        <li><a href="#" class="links" onmouseover="activarAnimacion(event)"
             onmouseleave="detenerAnimacion(event)"><img src="./Static/Imagenes/Icons/Book.png" alt="Book"
-              class="icono">Libros</a></li>
-        <li><a href="./templates/contactos.html" onmouseover="activarAnimacion(event)"
+              class="icono">Libros</a>
+            <ul class="sub-menu">
+              <li> <a href="./templates/ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+              <li> <a href="./templates/fantasia.html" class="links"> Fantasía </a></li>
+              <li> <a href="./templates/ficcion.html" class="links"> Ficción literaria </a></li>
+              <li> <a href="./templates/misterio.html" class="links"> Misterio </a></li>
+              <li> <a href="./templates/romantico.html" class="links"> Romántico </a></li>
+            </ul>
+            </li>
+        <li><a href="./templates/contactos.html" class="links" onmouseover="activarAnimacion(event)"
             onmouseleave="detenerAnimacion(event)"><img src="./Static/Imagenes/Icons/Contact.png" alt="Contact"
               class="icono">Contactos</a></li>
-        <li><a href="./templates/login.html" onmouseover="activarAnimacion(event)"
+        <li><a href="./templates/login.html" class="links" onmouseover="activarAnimacion(event)"
             onmouseleave="detenerAnimacion(event)"><img src="./Static/Imagenes/Icons/Login.png" alt="Login"
               class="icono">Login</a></li>
       </ul>
@@ -70,7 +82,7 @@
           </div>
         </div>
         <div class="libros" name="cora">
-          <a href="./templates//Libros/en-agosto-nos-vemos.html" class="portada-libro"><img src="./Static/Imagenes/Portadas/cora.jpg"
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img src="./Static/Imagenes/Portadas/cora.jpg"
               alt="En agosto Nos Vemos" width="100" height="200"></a>
           <div class="detalles-libro">
             <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Cora</span></a></p>
@@ -414,8 +426,8 @@
       </div>
       <div class="gallery">
         <a href="#" class="image-link">
-            <img src="./Static/Imagenes/Ciencia.jpg" alt="Ciencia">
-            <div class="over">Ciencia</div>
+            <img src="./Static/Imagenes/ciencia ficcion.jpeg" alt="Ciencia">
+            <div class="over">Ciencia Ficción</div>
             <div class="subtitle"></div>
         </a>
         <a href="#" class="image-link">
@@ -435,7 +447,7 @@
         </a>
         <a href="#" class="image-link">
             <img src="./Static/Imagenes/Ficcion.jpg" alt="Ficción">
-            <div class="over">Ficción</div>
+            <div class="over">Ficción Literaria</div>
             <div class="subtitle"></div>
         </a>
     </div>
@@ -476,23 +488,8 @@
     </div>
 </footer>
 
-
-  <!-- <div class="logo"> <img src="./Imagenes/Icono.png" alt="logo-laberinto">
-      <h1>Laberinto de Letras</h1>
-    </div>
-    <div class="info-empresa">
-      <h3>Más información de la pagina</h3>
-      <ul><a href="empleo.html">Empleos</a></ul>
-      <ul><a href="acerca-de-nosotros.html">Acerca de nosotros</a></ul>
-      <ul><a href="asistencia.html">Asistencia</a></ul>
-      <ul><a href="contacto.html">Contacto</a></ul>
-    </div> -->
-
-
-
-
-
 </body>
 <script src="./Static/js/Animaciones.js"></script>
+<script src="./Static/js/Hamburguesa.js"></script>
 
 </html>

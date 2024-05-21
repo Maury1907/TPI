@@ -5,23 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laberinto de Letras</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../Static/Estilo/styles.css">
     <link rel="shortcut icon" href="../Static/Imagenes/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
-        <!--seccion de menu de navegacion-->
-        <!--Esta seccion esta contenida en el "header", se podria agregar una barra de busqueda-->
+        <a class="logo"> <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+            <h1 class="titulo">Laberinto de Letras</h1>
+        </a>
+
+        <div class="hamburger">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
         <nav class="navegacion">
-            <div class="logo"> <img src="../Static/Imagenes/Icono.png" alt="logo-laberinto">
-                <h1>Laberinto de Letras</h1>
-            </div>
-            <ul class="header-nav">
-                <li><a href="../Index.html">Inicio</a></li>
-                <li><a href="#">Libros</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-                <li><a href="./login.html">Login</a></li>
+            <ul id="nav-links" class="header-nav">
+                <li><a href="../Index.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Home.png" alt="Home"
+                            class="icono">Inicio</a></li>
+                <li><a href="#" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Book.png" alt="Book"
+                            class="icono">Libros</a>
+                    <ul class="sub-menu">
+                        <li> <a href="./ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+                        <li> <a href="./fantasia.html" class="links"> Fantasía </a></li>
+                        <li> <a href="./ficcion.html" class="links"> Ficción literaria </a></li>
+                        <li> <a href="./misterio.html" class="links"> Misterio </a></li>
+                        <li> <a href="./romantico.html" class="links"> Romántico </a></li>
+                    </ul>
+                </li>
+                <li><a href="./contactos.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png"
+                            alt="Contact" class="icono">Contactos</a></li>
+                <li><a href="./login.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
+                            class="icono">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -295,25 +316,42 @@
             <script src="../Static/js/pagination.js"></script>
         </section>
     </main>
-    <footer class="footer">
-        <div class="redes sociales">
-            <h3>Seguí a Laberinto de Letras </h3>
-            <ul class="links-redes">
-                <li><a href="facebook">Facebook</a> </li>
-                <li> <a href="instagram">Instagram</a></li>
-                <li><a href="x">X</a> </li>
-                <li><a href="youtube">Youtube</a></li>
-            </ul>
-
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+            <ul><a href="#">Empleos (Proximamente)</a></ul>
+            <ul><a href="#">Acerca de nosotros (Proximamente)</a></ul>
+            <ul><a href="#">Asistencia (Proximamente)</a></ul>
+            <ul><a href="./contactos.html">Contacto</a></ul>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <div class="iconos-redes">
+                        <a class="instagram" href="#"><i class='bx bxl-instagram'></i></a>
+                        <a class="facebook" href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a class="twitter" href="#"><i class='bx bxl-twitter'></i></a>
+                        <a class="youtube" href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-empresa">
-            <h3>Más información de la pagina</h3>
-            <ul><a href="empleo.html">Empleos</a></ul>
-            <ul><a href="acerca-de-nosotros.html">Acerca de nosotros</a></ul>
-            <ul><a href="asistencia.html">Asistencia</a></ul>
-            <ul><a href="contacto.html">Contacto</a></ul>
+        <div class="grupo-2">
+            <p>&copy; 2024 <b>Codo a Codo</b> Todos los Derechos reservados.</p>
         </div>
     </footer>
+    <script src="../Static/js/Animaciones.js"></script>
+    <script src="../Static/js/Hamburguesa.js"></script>
+
 </body>
+
 
 </html>
