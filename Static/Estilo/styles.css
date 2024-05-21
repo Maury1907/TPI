@@ -525,10 +525,6 @@ footer {
     overflow: scroll;
   }
 
-  /* #contenedor-libros{
-  margin: 0 auto;
-} */
-
 }
 
 /* Celulares */
@@ -546,6 +542,10 @@ footer {
     justify-content: space-between;
   }
 
+  #superior {
+    display: flex;
+    flex-direction: column;
+  }
 
 }
 
