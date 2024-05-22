@@ -628,6 +628,11 @@ textarea.error-input-contacto {
     display: flex;
     flex-direction: column;
   }
+  .contenedor{
+    justify-content: center;
+    align-items: center;
+  gap: 2rem;
+  }
 }
 
 /* Específico página libro */
