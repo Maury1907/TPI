@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Static/Estilo/styles.css">
+    <link rel="stylesheet" href="../Static/css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../Static/Imagenes/favicon.png" type="image/x-icon">
     <title>Contactos</title>
@@ -59,8 +59,10 @@
                 <div class="column-half-1">
                     <h1>Nuestros contactos</h1>
                     <p><img src="../Static/Imagenes/Icons/Phone.png" alt="Phone" class="icono">Tel : (011) 4572-3086</p>
-                    <p><img src="../Static/Imagenes/Icons/Location.png" alt="Location" class="icono">Direccion : Av. Monroe 2922 CABA</p>
-                    <p><img src="../Static/Imagenes/Icons/Mail.png" alt="Mail" class="icono">Email: <a href="mailto:laberintodeletras@gmail.com">laberintodeletras@gmail.com</a></p>
+                    <p><img src="../Static/Imagenes/Icons/Location.png" alt="Location" class="icono">Direccion : Av.
+                        Monroe 2922 CABA</p>
+                    <p><img src="../Static/Imagenes/Icons/Mail.png" alt="Mail" class="icono">Email: <a
+                            href="mailto:laberintodeletras@gmail.com">laberintodeletras@gmail.com</a></p>
                 </div>
                 <div class="column-half">
                     <h1>Formulario de contacto</h1>
@@ -72,7 +74,8 @@
                         <span class="error-contacto" id="error-email"></span>
                         <input type="text" placeholder="Asunto" id="contacto-asunto" required>
                         <span class="error-contacto" id="error-asunto"></span>
-                        <textarea id="contacto-consulta" cols="30" rows="5" placeholder="  Tu consulta" required></textarea>
+                        <textarea id="contacto-consulta" cols="30" rows="5" placeholder="  Tu consulta"
+                            required></textarea>
                         <span class="error-contacto-textarea" id="error-consulta"></span>
                         <button type="button" class="contact-button">Enviar</button>
                     </form>
@@ -98,19 +101,29 @@
             </div>
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
-            <ul><a href="#">Empleos (Proximamente)</a></ul>
-            <ul><a href="#">Acerca de nosotros (Proximamente)</a></ul>
-            <ul><a href="#">Asistencia (Proximamente)</a></ul>
-            <ul><a href="./contactos.html">Contacto</a></ul>
+                <ul>
+                    <li><a href="#" class="message">Empleos (Proximamente)</a></li>
+                    <li><a href="#" class="message">Acerca de nosotros (Proximamente)</a></li>
+                    <li><a href="#" class="message">Asistencia (Proximamente)</a></li>
+                    <li><a href="./templates/contactos.html">Contacto</a></li>
+                </ul>
             </div>
             <div class="box">
                 <h2>SIGUENOS</h2>
                 <div class="red-social">
                     <div class="iconos-redes">
-                        <a class="instagram" href="#"><i class='bx bxl-instagram'></i></a>
-                        <a class="facebook" href="#"><i class='bx bxl-facebook-circle'></i></a>
-                        <a class="twitter" href="#"><i class='bx bxl-twitter'></i></a>
-                        <a class="youtube" href="#"><i class='bx bxl-youtube'></i></a>
+                        <a class="message instagram" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-instagram'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message facebook" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-facebook-circle'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message twitter" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-twitter'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message youtube" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-youtube'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
                     </div>
                 </div>
             </div>
@@ -123,4 +136,5 @@
 <script src="../Static/js/Animaciones.js"></script>
 <script src="../Static/js/Hamburguesa.js"></script>
 <script src="../Static/js/Contactos.js"></script>
+
 </html>

@@ -32,7 +32,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* Asegura que el contenido cubra al menos la altura completa de la ventana */
 }
 
 /*Nav*/
@@ -60,11 +59,8 @@ nav ul li a {
 
 nav .icono {
   width: 40px;
-  /* Tamaño de la imagen */
   height: auto;
-  /* Autoajuste de la altura */
   display: block;
-  /* Para que se respete el tamaño especificado */
   margin: 0 auto 5px;
   position: relative;
   top: 1px;
@@ -92,17 +88,15 @@ nav ul ul li a {
   padding: 14px 16px;
 }
 
-.sub-menu li a:hover{
+.sub-menu li a:hover {
   background-color: rgb(77, 85, 9);
 }
 
-/* Mostrar submenú al pasar el mouse */
 nav ul li:hover>ul {
   display: block;
   z-index: 1;
 }
 
-/* Fin de cambios menú desplegable */
 
 /* Cambios para menú hamburguesa */
 .hide {
@@ -132,7 +126,6 @@ nav ul li:hover>ul {
   }
 
   .lines-rotate {
-    /* background-color: rgb(85, 84, 84); */
     border-radius: 5px;
   }
 
@@ -166,7 +159,6 @@ nav ul li:hover>ul {
 
 /* Fin cambios Hamburguesa */
 
-
 .logo {
   color: white;
   text-decoration: none;
@@ -178,8 +170,8 @@ nav ul li:hover>ul {
 }
 
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 .header-nav {
@@ -212,11 +204,11 @@ nav ul li:hover>ul {
   }
 
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-15px);
   }
 
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-5px);
   }
 }
 
@@ -239,16 +231,11 @@ nav ul li:hover>ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /* Alinear items flex desde el comienzo */
   align-items: start;
-  /* Agrupa los elementos desde el inicio */
   text-align: center;
-  /* Alinea el texto al centro */
   overflow: hidden;
   padding: 30px;
 }
-
-
 
 .genero {
   margin: 10px;
@@ -261,10 +248,8 @@ nav ul li:hover>ul {
 
 .imagen-gen {
   width: 200px;
-  /* Ancho deseado */
   height: 200px;
 }
-
 
 .nombre-genero {
   font-size: 24px;
@@ -367,7 +352,7 @@ nav ul li:hover>ul {
 
 .image-link .over {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -388,6 +373,7 @@ nav ul li:hover>ul {
   font-size: 16px;
   color: black;
 }
+
 /* Contactos */
 
 .pagina-contacto {
@@ -433,13 +419,10 @@ nav ul li:hover>ul {
 
 .column-half-1 .icono {
   width: 40px;
-  /* Tamaño de la imagen */
   height: auto;
-  /* Autoajuste de la altura */
   display: inline;
-  /* Para que se respete el tamaño especificado */
   margin: 0 auto 5px;
-  position: static;
+  position: relative;
   top: 18px;
   right: 3px;
 }
@@ -519,24 +502,6 @@ textarea.error-input-contacto {
   border: 2px solid red;
 }
 
-
-
-/* 
-footer {
-  margin-top: auto;
-  background-color: rgb(93, 102, 11);
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 20px 0;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #FFF;
-} */
-
-
 /* Footer */
 .pie-pagina {
   background-color: rgb(93, 102, 11);
@@ -581,7 +546,6 @@ footer {
 
 .pie-pagina .grupo-1 .box ul {
   margin: 10px;
-
 }
 
 .pie-pagina .grupo-1 .box p {
@@ -617,7 +581,7 @@ footer {
   font-size: 13px;
 }
 
-.pie-pagina li{
+.pie-pagina li {
   list-style: none;
   margin-bottom: 5px;
 }
@@ -652,8 +616,8 @@ footer {
 
   nav .icono {
     width: 20px;
-    /* Tamaño de la imagen */
-    height: auto;}
+    height: auto;
+  }
 
   .generos-mas-buscados {
     overflow: scroll;
@@ -664,9 +628,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
 }
-
 
 /* Específico página libro */
 
@@ -737,13 +699,12 @@ footer {
 }
 
 .login-container {
-  padding: 140px;
+  padding: 100px;
   border-radius: 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
   background-image: url("../Imagenes/Background/sincerely-media-_-hjiem5TqI-unsplash.jpg");
   background-size: cover;
   background-position: center;
-
 }
 
 .h2-login {
@@ -755,12 +716,6 @@ footer {
 .input-login {
   margin-bottom: 20px;
 }
-
-/*.input-login label {
-  display: block;
-  margin-bottom: 5px;
-  width: 100%;
-}*/
 
 .input-login input {
   width: 100%;
@@ -797,6 +752,7 @@ footer {
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 16px;
 }
 
 .register-button {
@@ -809,6 +765,7 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 20px;
+  font-size: 16px;
 }
 
 button:hover {
@@ -823,16 +780,15 @@ button:hover {
 
 .return-login {
   width: 100%;
-  padding: 10px 65px 10px 80px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   color: black;
   border-radius: 3px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   margin-top: 20px;
   text-decoration: none;
-
+  padding: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .return-login:hover {
@@ -847,16 +803,15 @@ button:hover {
 
 .goto-register {
   width: 100%;
-  padding: 10px 85px 10px 80px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   color: black;
   border-radius: 3px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   margin-top: 20px;
   text-decoration: none;
-
+  padding: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .goto-register:hover {
@@ -967,7 +922,6 @@ td {
   padding: 5px;
 }
 
-
 /* Para páginas de géneros */
 #libros-genero {
   width: 90%;
@@ -1002,4 +956,21 @@ td {
 
 .page-link {
   text-decoration: none;
+}
+
+/*Popup Footer */
+.popup-message {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1000;
+  font-size: 16px;
+}
+
+.message:hover .popup-message {
+  display: block;
 }
