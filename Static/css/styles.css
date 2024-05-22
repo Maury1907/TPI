@@ -231,7 +231,8 @@ nav ul li:hover>ul {
   margin-bottom: 2.5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 3rem;
   align-items: start;
   text-align: center;
   overflow: hidden;
@@ -628,6 +629,11 @@ textarea.error-input-contacto {
   #superior {
     display: flex;
     flex-direction: column;
+  }
+
+  .contenedor {
+    justify-content: center;
+    gap: 2rem;
   }
 }
 
