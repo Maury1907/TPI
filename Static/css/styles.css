@@ -723,7 +723,7 @@ textarea.error-input-contacto {
   margin-bottom: 20px;
 }
 
-.input-login input {
+.input-login input, .input-login select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -842,7 +842,16 @@ button:hover {
   background-color: rgba(0, 50, 30, 0.8);
 }
 
-input.error-input {
+#error-pais{
+  position: relative;
+  bottom: 0px;
+  left: 2px;
+  color: red;
+  font-weight: bold;
+  background-color: rgba(0, 50, 30, 0.8);
+}
+
+input.error-input, select.error-input {
   border: 2px solid red;
 }
 

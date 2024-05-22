@@ -51,6 +51,21 @@
             <h2 class="h2-login">Registro</h2>
             <form action="#" class="form-login" method="get" novalidate>
                 <div class="input-login">
+                    <select id="pais" name="pais" required>
+                        <option value="">Seleccione su país</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="peru">Peru</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="brasil">Brasil</option>
+                    </select>
+                    <span class="error" id="error-pais"></span>
+                </div>
+                <div class="input-login">
                     <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <span class="error" id="error-email"></span>
@@ -122,8 +137,8 @@
         </div>
     </footer>
     <script src="../Static/js/Registro.js"></script>
-<script src="../Static/js/Animaciones.js"></script>
-<script src="../Static/js/Hamburguesa.js"></script>
+    <script src="../Static/js/Animaciones.js"></script>
+    <script src="../Static/js/Hamburguesa.js"></script>
 
 </body>
 
