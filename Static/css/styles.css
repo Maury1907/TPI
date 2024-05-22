@@ -412,6 +412,9 @@ nav ul li:hover>ul {
   padding: 50px;
   border-radius: 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), url(../Imagenes/Background/Back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .column-half-1 p {
@@ -724,7 +727,7 @@ textarea.error-input-contacto {
   margin-bottom: 20px;
 }
 
-.input-login input {
+.input-login input, .input-login select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -843,7 +846,16 @@ button:hover {
   background-color: rgba(0, 50, 30, 0.8);
 }
 
-input.error-input {
+#error-pais{
+  position: relative;
+  bottom: 0px;
+  left: 2px;
+  color: red;
+  font-weight: bold;
+  background-color: rgba(0, 50, 30, 0.8);
+}
+
+input.error-input, select.error-input {
   border: 2px solid red;
 }
 

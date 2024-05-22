@@ -6,6 +6,7 @@ btnSend.addEventListener('click', function () {
     let password = document.querySelector("#password");
     let repeatpassword = document.querySelector("#repeatpassword");
     let terminos = document.querySelector("#terminos");
+    let pais = document.querySelector("#pais");
     // Expresiones regulares
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -16,10 +17,28 @@ btnSend.addEventListener('click', function () {
     document.querySelector("#error-email").innerHTML = "";
     document.querySelector("#error-repeatpassword").innerHTML = "";
     document.querySelector("#error-terminos").innerHTML = "";
+    document.querySelector("#error-pais").innerHTML = "";
+
     let errorInputs = document.querySelectorAll('.error-input');
     errorInputs.forEach(input => {
         input.classList.remove('error-input');
     });
+
+    pais.addEventListener('change', function() {
+        if (pais.value === "") {
+            document.querySelector("#error-pais").innerHTML = "Debes seleccionar un país.";
+            pais.classList.add('error-input');
+        } else {
+            document.querySelector("#error-pais").innerHTML = "";
+            pais.classList.remove('error-input');
+        }
+    });
+
+    if (pais.value === "") {
+        document.querySelector("#error-pais").innerHTML = "Debes seleccionar un país.";
+        pais.classList.add('error-input');
+        return;
+    }
 
     terminos.addEventListener('change', verificarTerminos);
     function verificarTerminos() {
