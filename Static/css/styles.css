@@ -411,6 +411,9 @@ nav ul li:hover>ul {
   padding: 50px;
   border-radius: 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), url(../Imagenes/Background/Back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .column-half-1 p {
