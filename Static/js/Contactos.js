@@ -86,5 +86,5 @@ btnSend.addEventListener('click', function () {
 
     alert('Su cosulta fue enviada exitosamente');
 
-    window.location.href = './templates/contactos.html';
+    window.location.href = './contactos.html';
 });
