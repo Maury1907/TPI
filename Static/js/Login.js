@@ -47,5 +47,5 @@ btnSend.addEventListener('click', function () {
 
     alert('Inicio de sesión exitoso');
 
-    window.location.href = '../Index.html';
+    window.location.href = '../index.html';
 });
